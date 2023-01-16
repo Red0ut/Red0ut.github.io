@@ -10,11 +10,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700;900&family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+<script>
+    function myFunction() {
+      document.getElementById("java").innerHTML = "Bu metin JavaScript kullanılarak yapılmıştır..! ";
+    }
+    </script>
+
+
 </head>
 <body>
     <section class="header">
         <nav>
-        
+            <a href="index.html"><img src="logo.png"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
                 <ul>
@@ -25,7 +33,7 @@
                     <li><a href="">İletişim</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
 
         </nav>
 
@@ -34,7 +42,8 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                  Neque quasi libero <br> incidunt ipsum beatae provident. 
                  Dignissimos aliquam quisquam quos natus.</p>
-                 <a href="" class="hero-btn">Daha Fazlası İçin</a>
+                 <button class="hero-btn" onclick="myFunction()">Daha Fazlası İçin</button>
+                 <p id="java"></p>
         </div>
 
 
